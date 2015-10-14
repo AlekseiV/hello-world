@@ -19,6 +19,7 @@ def index(request):
         f = text(question_text=texti1, pub_date=timezone.now(),title_text=title)
         f.save()
     return render(request, 'guestbook/index.html', context)
+    print("index")
 
 
 
